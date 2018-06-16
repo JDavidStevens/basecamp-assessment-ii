@@ -54,10 +54,15 @@ myArrayCopy = myArray.slice();
 var myNumbers = [333, 1, 4, 5, 511, 34, 88, 77, 222];
 //DON'T TOUCH THE CODE ABOVE
 var evensArray = [];
-
-if (myNumbers[i]%2===0){
-  evensArray.push()
+function evensOnly(){
+  for(i=0;i<myNumbers.length;i++)
+{if (myNumbers[i]%2===0){
+  evensArray.push(myNumbers[i]);
+}
+}
+return evensArray;
 };
+
 
 // #9 Using filter(), return only your friends of the array of people below. Assign it to a variable called 'trueFriends'.
 // CODE HERE
